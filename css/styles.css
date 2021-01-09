@@ -37,7 +37,7 @@ hr {
 }
 
 a {
-    color: #739237;
+    color: #E0F1C0;
   }
   
 a:hover {
@@ -46,5 +46,5 @@ a:hover {
   
 #dateModified {
     font-size: small;
-    color: #8CAEB0;
+    color: #FFCDCB;
 }
