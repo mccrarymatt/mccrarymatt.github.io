@@ -1,0 +1,50 @@
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #9D3E3B;
+    color: #E0F1C0;
+    font-size: medium;
+    max-width: 720px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+header, footer{
+    background-color: #245C5F;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 5px outset #245C5F;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#portal-portrait{
+    float: right;
+    margin-right: 1rem;
+    border: 2px outset #ffcecb8c;
+    box-shadow: 2px 2px 2px rgba(153, 153, 153, 0.425);
+}
+
+main {
+    margin-top: 3rem;
+}
+
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+a {
+    color: #739237;
+  }
+  
+a:hover {
+    color: #BED88E;
+  }
+  
+#dateModified {
+    font-size: small;
+    color: #8CAEB0;
+}
