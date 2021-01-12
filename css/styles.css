@@ -1,12 +1,16 @@
 
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #9D3E3B;
     color: #E0F1C0;
     font-size: medium;
     max-width: 720px;
     margin: auto;
     line-height: 1.5;
+}
+
+h1, h2 {
+    font-family: 'Potta One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header, footer{
