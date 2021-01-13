@@ -1,0 +1,82 @@
+@media screen and (min-width: 64em) {
+
+    
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #E0F1C0;
+    font-size: medium;
+    margin: auto;
+    line-height: 1.5;
+}
+
+header h1, header h2 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+h1, h2 {
+    font-family: 'Potta One', sans-serif;
+}
+
+header, footer{
+    background-color: #245C5F;
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+section h2 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    color: white;
+    background-color: #537219;
+    border: 1px solid #537219;
+    border-radius: 8px 8px 0 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+
+
+section a, section h3, section img{
+    display: block;
+    background-color: #9D3E3B;
+    padding: 0.5em;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+}
+
+section h3{
+    border-top: 2px solid gray;
+}
+
+section img {
+    border-bottom: 2px solid gray;
+}
+
+a{
+    color: #E0F1C0;
+}
+  
+#dateModified {
+    font-size: small;
+    color: #FFCDCB;
+}
+
+}
