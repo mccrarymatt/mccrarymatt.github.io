@@ -1,5 +1,3 @@
-@media screen and (max-width: 39.9375em) {
-  
 body {
     font-family: 'Montserrat', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #E0F1C0;
@@ -27,6 +25,9 @@ header, footer{
 main{
     display: grid;
     grid-template-columns: auto;
+    max-width: 960px;
+    margin: auto;
+    gap: 1em;
 }
 
 section {
@@ -51,7 +52,7 @@ section h2 {
 
 
 
-section a, section h3, section img{
+section a, section h3, section img, section p{
     display: block;
     background-color: #9D3E3B;
     padding: 0.5em;
@@ -59,13 +60,14 @@ section a, section h3, section img{
     margin-bottom: 0%;
     border-left: 2px solid gray;
     border-right: 2px solid gray;
+    max-width: 300px;
 }
 
 section h3{
     border-top: 2px solid gray;
 }
 
-section img {
+section p {
     border-bottom: 2px solid gray;
 }
 
@@ -77,6 +79,4 @@ a {
 #dateModified {
     font-size: small;
     color: #FFCDCB;
-}
-
 }
