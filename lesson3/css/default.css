@@ -58,6 +58,10 @@ footer {
     padding-bottom: 3rem;
 }
 
+.logo-vector {
+	max-width: 200px;
+}
+
 .primary-1 { background-color: #A79DB1 }
 .primary-2 { background-color: #7F6B95 }
 .primary-0 { background-color: #5F437D }

@@ -10,5 +10,9 @@
             padding-top: 1rem;
             padding-bottom: 1rem;
         }
+
+        .logo-vector {
+            max-width: 300px;
+        }
         
 }

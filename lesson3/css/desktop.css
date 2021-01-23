@@ -3,4 +3,9 @@
 	nav a {
 		font-size: 1.1rem;
 	}
+
+	.logo-vector {
+		max-width: 400px;
+	}
+
 }
