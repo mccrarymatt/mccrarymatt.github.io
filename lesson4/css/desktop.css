@@ -1,0 +1,24 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	nav a {
+		font-size: 1.1rem;
+	}
+
+	nav ul li a {
+		display: block;
+	}
+
+	header, footer {
+		max-width: 70%;
+	}
+
+	header h1 {
+		font-size: 2em;
+	}
+
+	.logo {
+		max-width: 100px;
+		margin: auto;
+	}
+
+}
