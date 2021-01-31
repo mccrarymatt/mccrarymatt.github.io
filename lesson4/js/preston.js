@@ -8,13 +8,28 @@ var dayMonth = months[month] + dayOfMonth;
 document.getElementById("date").innerHTML = days[dayOfWeek] + ", " + dayOfMonth + " " + months[month] + " " + now.getFullYear();
 
 function displayMenu() {
-    document.getElementsByClassName("menu-button")[0].style.display = "none";
-    document.getElementsByClassName("close-menu-button")[0].style.display = "block";
-    document.getElementsByClassName("navigation")[0].style.display = "grid";
+    var media = window.matchMedia("(min-width: 37.5em)")
+    if (media.matches) {
+        document.getElementsByClassName("menu-button")[0].style.display = "none";
+        document.getElementsByClassName("close-menu-button")[0].style.display = "none";
+        document.getElementsByClassName("navigation")[0].style.display = "grid";
+      } else {
+        document.getElementsByClassName("menu-button")[0].style.display = "none";
+        document.getElementsByClassName("close-menu-button")[0].style.display = "flex";
+        document.getElementsByClassName("navigation")[0].style.display = "grid";
+      }
 }
 
 function closeMenu() {
-    document.getElementsByClassName("menu-button")[0].style.display = "block";
+  var media = window.matchMedia("(min-width: 37.5em)")
+  if (media.matches) {
+    document.getElementsByClassName("menu-button")[0].style.display = "none";
+    document.getElementsByClassName("close-menu-button")[0].style.display = "none";
+    document.getElementsByClassName("navigation")[0].style.display = "grid";
+
+  } else {  
+    document.getElementsByClassName("menu-button")[0].style.display = "flex";
     document.getElementsByClassName("close-menu-button")[0].style.display = "none";
     document.getElementsByClassName("navigation")[0].style.display = "none";
+  }
 }

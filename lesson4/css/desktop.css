@@ -21,4 +21,8 @@
 		margin: auto;
 	}
 
+	.menu-button, .close-menu-button {
+		display: none;
+	}
+
 }
