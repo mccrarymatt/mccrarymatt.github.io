@@ -1,0 +1,265 @@
+body {
+	font-size: 16px;
+    font-family: 'Merriweather Sans', sans-serif;
+	background-color: #B9835C;
+	color: white;
+}
+
+/* phone or baseline views **************************/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Merriweather', serif;
+}
+
+h2{
+	background-color: #408261;
+	border: 0.2em solid #1F6B44;
+	border-radius: 0.1rem;
+	opacity: 0.9;
+	padding: 0.5em;
+}
+
+header{
+	background-color: #5F437D;
+	border-bottom: 0.1em solid #442367;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: auto auto 2em 2em auto;
+	align-items: center;
+	justify-content: center;
+}
+
+footer {
+	background-color: #5F437D;
+}
+
+header,
+nav,
+main,
+footer {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+header h1{
+	background-color: transparent;
+	border-style: none;
+	box-shadow: none;
+	margin-right: auto;
+	margin-left: 1em;
+	font-size: 1.5em;
+	max-width: 15rem;
+	padding: 0%;
+	margin-bottom: 0;
+	grid-column: 2/4;
+	grid-row: 2;
+}
+
+.logo {
+	margin: auto;
+	max-width: 70px;
+	grid-row: 2/4;
+	padding: 1rem;
+}
+
+.motto{
+	grid-column: 2/4;
+	font-size: 0.8em;
+	grid-row: 3;
+	font-style: italic;
+	margin-bottom: auto;
+	margin-right: auto;
+	margin-left: 2.2em;
+}
+
+.menu-button, .close-menu-button {
+	grid-row: 4;
+	grid-column: 2;
+	margin-bottom: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.menu-button img, .close-menu-button img{
+	width: 40px;
+}
+
+.close-menu-button {
+	display: none;
+}
+
+nav {
+	display: none;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	text-align: center;
+	background-color: #442367;
+	color: white;
+	grid-row: 5;
+	grid-column: 1/4;
+	width: 100%;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+    align-items: center;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75em;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+
+nav a:hover {
+	background-color: #7F6B95;
+	color: black;
+}
+
+.active {
+	background-color:  #A79DB1;
+}
+
+footer {
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+main h2, main h3{
+	display: inline-block;
+}
+
+#friday-banner{
+	display: none;
+	grid-row: 1;
+	grid-column: 1/4;
+	background-color:#6C9B83;
+	color: #FFEDDF;
+	border-bottom: 0.1em solid #1F6B44;
+}
+
+#preston-weather-banner{
+	position: relative;
+	margin-bottom: 2rem;
+}
+
+#preston-weather-banner img{
+	width: 100%;
+}
+
+.weather-summary{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	background-color: #408261;
+	border: 0.2em solid #1F6B44;
+	border-radius: 0.1rem;
+	opacity: 0.9;
+	padding: 0.5em;
+}
+
+.weather-summary h3{
+	margin: 0;
+	font-size: 1em;
+}
+
+.weather-summary ul{
+	margin-top: 0.4em;
+	margin-bottom: 0;
+	list-style-type: none;
+	padding: 0%;
+	font-size: 0.9em;
+}
+
+.weather-summary span{
+	color: #DDB69A;
+}
+
+.forecast{
+	display: none;
+}
+
+.article{
+	text-align: left;
+	background-color: #408261;
+	border: 0.2em solid #1F6B44;
+	border-radius: 0.1rem;
+	opacity: 0.9;
+	padding: 0.5em;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.article img{
+	text-align: center;
+	display: block;
+	width: 20rem;
+}
+
+.article-img{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.article h3{
+	margin: 0;
+	margin-left: 1rem;
+	font-size: 2em;
+}
+
+.article h4{
+	margin: 0;
+	margin-left: 1rem;
+	font-size: 1.3em;
+}
+
+.article p{
+	margin-left: 1rem;
+}
+
+#contact-map ul{
+	list-style-type: none;
+}
+
+#contact-map{
+	display: grid;
+	background-color: #A79DB1;
+}
+
+#contact-map h4{
+	padding-left: 40px;
+	margin-bottom: 0;
+	font-size: 18px;
+}
+
+.map{
+	grid-row: 2;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0.2em solid  #442367;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.contact-info{
+	margin: auto;
+	text-align: left;
+	grid-row: 1;
+}
+
+.contact-info li{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.social{
+	display: none;
+}
