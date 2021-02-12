@@ -1,0 +1,50 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	nav a {
+		font-size: 1.1rem;
+	}
+
+	nav ul li a {
+		display: block;
+	}
+
+	header, footer {
+		max-width: 70%;
+	}
+
+	main{
+		max-width: 70%;
+	}
+
+	header h1 {
+		font-size: 1.7em;
+	}
+
+	.logo {
+		max-width: 100px;
+		margin: auto;
+	}
+
+	.menu-button, .close-menu-button {
+		display: none;
+	}
+
+	.weather-summary h3{
+		font-size: 1.5em;
+	}
+	
+	.weather-summary ul{
+		font-size: 1.4em;
+	}
+
+	.article{
+		min-height: 26rem;
+	}
+
+	.article-img{
+		float: right;
+		margin-right: 1rem;
+		margin-top: 1rem;
+	}
+
+}
