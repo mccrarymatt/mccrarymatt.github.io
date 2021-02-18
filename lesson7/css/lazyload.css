@@ -1,0 +1,18 @@
+body {
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto;
+}
+
+picture {
+    grid-column: 1;
+}
+
+picture img[data-src] {
+    filter: blur(0.3em);
+  }
+  
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
