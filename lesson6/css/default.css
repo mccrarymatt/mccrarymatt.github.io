@@ -269,3 +269,36 @@ main h2, main h3{
 .social{
 	display: none;
 }
+
+#gallery-grid{
+	max-width: 100%;
+	margin: auto;
+	justify-content: center;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 400px;
+	grid-template-rows: repeat(9, 275px);
+	gap: 0.5em;
+	margin-bottom: 1em;
+}
+
+.gallery-image{
+	margin: auto;
+	justify-content: center;
+	width: 90%;
+	height: 90%;
+	background-color: #408261;
+	border: 0.2em solid #1F6B44;
+	border-radius: 0.1rem;
+	opacity: 0.9;
+}
+
+.gallery-image picture{
+	display: block;
+	margin: 0.5rem;
+}
+
+
+.gallery-image picture img{
+	max-width: 100%;
+}

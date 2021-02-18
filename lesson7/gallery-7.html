@@ -1,0 +1,155 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Weather Gallery</title>
+  
+  <meta name="description" content="Weather Gallery Page">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="/lesson6/css/default.css">
+  <link rel="stylesheet" href="/lesson6/css/tablet.css">
+  <link rel="stylesheet" href="/lesson6/css/desktop.css">
+
+</head>
+
+<body>
+  
+<header>
+    <img src="images/Logo.svg" alt="Storm Spectators Logo" class=logo>
+    <h1>Storm Spectators</h1>
+    <div class="motto">Our eye is on the weather.</div>
+    <a class="menu-button" href="#" onclick="displayMenu()">
+        <img src="images/menu.svg" alt="menu">
+    </a>
+    <a class="close-menu-button" href="#" onclick="closeMenu()">
+        <img src="images/menucross.svg" alt="close">
+    </a>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#" class="active">Gallery</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+    <h2>Weather Gallery</h1>
+    <div id="gallery-grid">
+
+        <div class="gallery-image">
+
+            <picture>
+                <img src="images/placeholderGallery.jpg" data-src="images/foggyGallery.jpg" alt="fog-image">
+            </picture>
+            <span>It looks like a fog is rolling in this morning.</span>
+
+        </div>
+
+        <div class="gallery-image">
+
+            <picture>
+                <img src="images/placeholderGallery.jpg" data-src="images/lightningGallery.jpg" alt="lightning-image">
+            </picture>
+            <span>A flash of lightning during a dark night.</span>
+
+        </div>
+
+        <div class="gallery-image">
+
+            <picture>
+                <img src="images/placeholderGallery.jpg" data-src="images/darkCloudsGallery.jpg" alt="stormy-image">
+            </picture>
+            <span>A dark and stormy day.</span>
+
+        </div>
+
+        <div class="gallery-image">
+
+            <picture>
+                <img src="images/placeholderGallery.jpg" data-src="images/sunsetCloudsGallery.jpg" alt="cloudy-sunset">
+            </picture>
+            <span>A sunset through the clouds.</span>
+
+        </div>
+
+        <div class="gallery-image">
+
+            <picture>
+                <img src="images/placeholderGallery.jpg" data-src="images/sunlightFogGallery.jpg" alt="sunlight-breaking-fog">
+            </picture>
+            <span>Sunlight breaking through the fog.</span>
+
+        </div>
+
+        <div class="gallery-image">
+
+            <picture>
+                <img src="images/placeholderGallery.jpg" data-src="images/cloudsFewGallery.jpg" alt="a-few-clouds">
+            </picture>
+            <span>Only a few clouds in the sky.</span>
+
+        </div>
+
+        <div class="gallery-image">
+
+            <picture>
+                <img src="images/placeholderGallery.jpg" data-src="images/clearSkyGallery.jpg" alt="no-clouds">
+            </picture>
+            <span>A perfectly clear day.</span>
+
+        </div>
+
+        <div class="gallery-image">
+
+            <picture>
+                <img src="images/placeholderGallery.jpg" data-src="images/snowStormGallery.jpg" alt="snow-storm">
+            </picture>
+            <span>A heavy snow storm.</span>
+
+        </div>
+
+        <div class="gallery-image">
+
+            <picture>
+                <img src="images/placeholderGallery.jpg" data-src="images/thickStormGallery.jpg" alt="thick-storm-clouds">
+            </picture>
+            <span>A storm with thick cloud cover.</span>
+
+        </div>
+
+    </div>
+</main>
+
+
+<footer>
+ &#169; Storm Spectators | Attributions: <a href="https://unsplash.com/photos/tSBrcuWa-gw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Csaba Talaber</a>, <a href="https://unsplash.com/photos/QO4Y97jiVDQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">NOAA</a>, <a href="https://unsplash.com/photos/AA4D_MEt29E?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Chris Barbalis</a>, <a href="https://unsplash.com/photos/q7z-AUlHPaw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Łukasz Łada</a>, <a href="https://unsplash.com/photos/HytjPVkR9gE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Malachi Brooks</a>, <a href="https://unsplash.com/photos/rdIxmR9GpWk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">amanda</a>, <a href="https://unsplash.com/photos/_-GXknZDIig?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Lucas Ludwig</a>, <a href="https://unsplash.com/photos/aDN6MOlB-xg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"> Wolfgang Hasselmann</a> | Matthew McCrary <br> <div id="date"></div>
+
+</footer>
+
+<script src="js/date.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+  google: {
+    families: [
+       'Merriweather', 'Merriweather+Sans'
+    ]
+  }
+});
+</script>
+
+<script src="js/lazyload.js"></script>
+
+</body>
+</html>

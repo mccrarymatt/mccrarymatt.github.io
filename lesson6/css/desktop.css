@@ -47,4 +47,13 @@
 		margin-top: 1rem;
 	}
 
+	#gallery-grid{
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: repeat(3, 270px);
+	}
+
+	.gallery-image:hover{
+		box-shadow: 0 0 20px #333;
+	}
+
 }
