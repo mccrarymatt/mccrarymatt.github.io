@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Weather Gallery</title>
+  
+  <meta name="description" content="Weather Gallery Page">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="/lesson6/css/default.css">
+  <link rel="stylesheet" href="/lesson6/css/tablet.css">
+  <link rel="stylesheet" href="/lesson6/css/desktop.css">
+
+</head>
+
+<body>
+  
+<header>
+    <img src="/lesson7/images/Logo.svg" alt="Storm Spectators Logo" class=logo>
+    <h1>Storm Spectators</h1>
+    <div class="motto">Our eye is on the weather.</div>
+    <a class="menu-button" href="#" onclick="displayMenu()">
+        <img src="/lesson7/images/menu.svg" alt="menu">
+    </a>
+    <a class="close-menu-button" href="#" onclick="closeMenu()">
+        <img src="/lesson7/images/menucross.svg" alt="close">
+    </a>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="/lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="/lesson8/stormcenter.html" class="active">Storm Center</a></li>
+            <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+<div id="storm-thanks">
+<h2>Thank You for Your Storm Report.</h2>
+</div>
+    <div id="contact-map">
+        <img src="/lesson6/images/map.jpg" alt="map" class="map">
+        <section class="contact-info">
+            <h4>Storm Spectators</h4>
+            <ul>
+                <li>&#9750; 47 Place LN, Preston, ID 83263</li>
+                <li>&#9742; 555.555.5555</li>
+                <li>&#9993; spectators@stormspectators.com</li>
+                <li class="social"><a href="#"><img src="/lesson6/images/facebook.svg" alt="facebook"></a></li>
+                <li class="social"><a href="#"><img src="/lesson6/images/twitter.svg" alt="twitter"></a></li>
+                <li class="social"><a href="#"><img src="/lesson6/images/linkedin.svg" alt="linkedin"></a></li>
+            </ul>
+        </section>
+    </div>
+
+
+</main>
+
+
+<footer>
+ &#169; Storm Spectators | Attributions: Icons made by <a href="https://www.freepik.com">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>, map from <a href="https://24timezones.com/">24timezones.com</a> | Matthew McCrary <br> <div id="date"></div>
+
+</footer>
+
+<script src="/lesson7/js/date.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+  google: {
+    families: [
+       'Merriweather', 'Merriweather+Sans'
+    ]
+  }
+});
+</script>
+
+<script src="js/lazyload.js"></script>
+
+</body>
+</html>

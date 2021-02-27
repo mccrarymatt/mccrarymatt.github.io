@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<fruit>
+		<id>01</id>
+		<name>Apple</name>
+		<color>red</color>
+        <taste>sweet</taste>
+	</fruit>
+	<fruit>
+		<id>02</id>
+		<name>Lemon</name>
+		<color>yellow</color>
+        <taste>sour</taste>
+	</fruit>
+    <fruit>
+        <id>03</id>
+        <name>Orange</name>
+        <color>orange</color>
+        <taste>tangy</taste>
+    </fruit>
+    <fruit>
+        <id>04</id>
+        <name>Pear</name>
+        <color>green</color>
+        <taste>sweet</taste>
+    </fruit>
+    <fruit>
+        <id>05</id>
+        <name>Strawberry</name>
+        <color>red</color>
+        <taste>sweet</taste>
+    </fruit>    
+</root>

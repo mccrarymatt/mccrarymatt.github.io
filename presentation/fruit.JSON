@@ -1,0 +1,10 @@
+{
+"fruit": [ 
+        { "id":"01", "name": "Apple", "color": "red", "taste": "sweet"}, 
+        { "id":"02", "name": "Lemon", "color": "yellow", "taste": "sour"},
+        { "id":"03", "name":"Orange", "color":"orange", "taste":"tangy"},
+        { "id":"04", "name":"Pear", "color":"green", "taste":"sweet"},
+        { "id":"05", "name":"Strawberry", "color":"red", "taste":"sweet"}
+]   
+}
+   
