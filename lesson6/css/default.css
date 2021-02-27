@@ -323,7 +323,6 @@ main h2, main h3{
 #storm_form{
 	display: flex;
 	flex-direction: column;
-	align-items: left;
 	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
