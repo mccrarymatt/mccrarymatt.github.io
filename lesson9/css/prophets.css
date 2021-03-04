@@ -1,0 +1,70 @@
+body{
+    text-align: center;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    gap: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 0 20px #333;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+h2{
+    color: #FFBF36;
+    font-family: 'Arapey', serif;
+}
+
+.cards section{
+    background-color: #017F91;
+    border: 2px solid #016371;
+    margin: 0.5rem;
+}
+
+.info{
+    padding: 0.5rem;
+    color: white;
+}
+
+img{
+    margin: 0.5rem;
+    box-shadow: 0 0 20px #333;
+}
+
+footer{
+    margin-top: 2rem;
+    background-color: #017F91;
+    color: white;
+    padding: 2rem;
+}
+
+header{
+    background-color: #017F91;
+    color: white;
+    padding: 2rem;
+}
+
+@media only screen and (min-width: 37.5em) {
+
+    .cards{
+        grid-template-columns: auto auto;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 60em) {
+
+    .cards{
+        grid-template-columns: auto auto auto auto;
+    }
+
+    section:hover{
+        box-shadow: 0 0 20px #333;
+    }
+
+}
