@@ -414,8 +414,7 @@ input:required:valid{
 	margin: auto;
 	left: 0;
 	right: 0;
-	top: 1;
-	bottom: 2;
+	top: 0;
 	text-align: center;
 	display: none;
 }

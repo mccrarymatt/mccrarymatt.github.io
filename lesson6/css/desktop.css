@@ -67,6 +67,28 @@
 		box-shadow: 0 0 20px #333;
 	}
 
+	.map{
+		grid-row: 1;
+	}
+	
+	.contact-info{
+		grid-row: 1;
+		grid-column: 2;
+	}
+
+	.social{
+		display: inline;
+		padding-right: 0.2em;
+	}
+
+	.social img{
+		max-width: 1em;
+	}
+
+	.map img{
+		width: 50%;
+	}
+
 	.town-cards{
 		grid-template-columns: 1fr 1fr 1fr;
 	}
