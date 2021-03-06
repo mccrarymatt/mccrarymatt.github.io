@@ -91,4 +91,12 @@
 	.fact h3{
 		margin-bottom: 0;
 	}
+
+	.article img{
+		width: 25rem;
+	}
+
+	.article-weather-fact .article img{
+		width: 30rem;
+	}
 }
