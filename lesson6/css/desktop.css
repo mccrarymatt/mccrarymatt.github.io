@@ -56,4 +56,28 @@
 		box-shadow: 0 0 20px #333;
 	}
 
+	.town-cards{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.town-photo{
+		grid-row: 1;
+		grid-column: 1;
+	}
+
+	.town-data{
+		grid-column: 1;
+	}
+
+	.town-motto{
+		grid-column: 1;
+	}
+
+	.fact{
+		max-width: 40%;
+	}
+
+	.fact h3{
+		margin-bottom: 0;
+	}
 }

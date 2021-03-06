@@ -1,5 +1,5 @@
 /* Tablet Views ******************************/
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 37.5em) and (max-width: 60em) {
 
         .logo {
             max-width: 100px;
@@ -114,5 +114,32 @@
             grid-template-columns: 400px 400px;
             grid-template-rows: repeat(5, 285px);
         }
+
+        .town-cards section{
+            gap: 1rem;
+        }
+
+        .town-cards section:nth-child(odd) .town-photo{
+            grid-column: 1;
+            grid-row: 1/5;
+        }
+
+        .town-cards section:nth-child(odd) .town-data, .town-cards section:nth-child(odd) h2, .town-cards section:nth-child(odd) .town-motto{
+            grid-column: 2;
+        }
+
+        .town-cards section:nth-child(2) .town-photo{
+            grid-column: 2;
+            grid-row: 1/5;
+        }
+
+        .town-cards section:nth-child(2) .town-data, section:nth-child(odd) h2, section:nth-child(odd) .town-motto{
+            grid-column: 1;
+        }
+
+        .town-cards section{
+            width: 90%;
+        }
+
 
 }
