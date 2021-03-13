@@ -4,7 +4,6 @@ const apiCurrentURL = "https://api.openweathermap.org/data/2.5/weather?id=560447
 fetch(apiCurrentURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
 
         //Set the current to the weather main description and the curremt temperature.
         document.getElementById('current').innerHTML = jsObject.weather[0].main + " " + jsObject.main.temp + "&#176;F"; 
@@ -39,7 +38,6 @@ const apiForecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604
 fetch(apiForecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
 
         numDays = 5;
         day = 1;
