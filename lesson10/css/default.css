@@ -1,0 +1,468 @@
+body {
+	font-size: 16px;
+    font-family: 'Merriweather Sans', sans-serif;
+	background-color: #B9835C;
+	color: white;
+}
+
+/* phone or baseline views **************************/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Merriweather', serif;
+}
+
+h2{
+	background-color: #408261;
+	border: 0.2em solid #1F6B44;
+	border-radius: 0.1rem;
+	opacity: 0.9;
+	padding: 0.5em;
+}
+
+header{
+	background-color: #5F437D;
+	border-bottom: 0.1em solid #442367;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: auto auto 2em 2em auto;
+	align-items: center;
+	justify-content: center;
+}
+
+footer {
+	background-color: #5F437D;
+}
+
+header,
+nav,
+main,
+footer {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+header h1{
+	background-color: transparent;
+	border-style: none;
+	box-shadow: none;
+	margin-right: auto;
+	margin-left: 1em;
+	font-size: 1.5em;
+	max-width: 15rem;
+	padding: 0%;
+	margin-bottom: 0;
+	grid-column: 2/4;
+	grid-row: 2;
+}
+
+.logo {
+	margin: auto;
+	max-width: 70px;
+	grid-row: 2/4;
+	padding: 1rem;
+}
+
+.motto{
+	grid-column: 2/4;
+	font-size: 0.8em;
+	grid-row: 3;
+	font-style: italic;
+	margin-bottom: auto;
+	margin-right: auto;
+	margin-left: 2.2em;
+}
+
+.menu-button, .close-menu-button {
+	grid-row: 4;
+	grid-column: 2;
+	margin-bottom: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.menu-button img, .close-menu-button img{
+	width: 40px;
+}
+
+.close-menu-button {
+	display: none;
+}
+
+nav {
+	display: none;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	text-align: center;
+	background-color: #442367;
+	color: white;
+	grid-row: 5;
+	grid-column: 1/4;
+	width: 100%;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+    align-items: center;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75em;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+
+nav a:hover {
+	background-color: #7F6B95;
+	color: black;
+}
+
+.active {
+	background-color:  #A79DB1;
+	color: black;
+}
+
+footer {
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer a{
+	color: #fff;
+}
+
+main h2, main h3{
+	display: inline-block;
+}
+
+#friday-banner{
+	display: none;
+	grid-row: 1;
+	grid-column: 1/4;
+	background-color:#6C9B83;
+	color: #FFEDDF;
+	border-bottom: 0.1em solid #1F6B44;
+}
+
+#preston-weather-banner{
+	position: relative;
+	margin-bottom: 2rem;
+}
+
+#preston-weather-banner img{
+	width: 100%;
+}
+
+.weather-summary{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	background-color: #408261;
+	border: 0.2em solid #1F6B44;
+	border-radius: 0.1rem;
+	opacity: 0.9;
+	padding: 0.5em;
+}
+
+.weather-summary h3{
+	margin: 0;
+	font-size: 1em;
+}
+
+.weather-summary ul{
+	margin-top: 0.4em;
+	margin-bottom: 0;
+	list-style-type: none;
+	padding: 0%;
+	font-size: 0.9em;
+}
+
+.weather-summary span{
+	color: #DDB69A;
+}
+
+.forecast{
+	display: none;
+}
+
+.article{
+	text-align: left;
+	background-color: #408261;
+	border: 0.2em solid #1F6B44;
+	border-radius: 0.1rem;
+	opacity: 0.9;
+	padding: 0.5em;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.article img{
+	text-align: center;
+	display: block;
+	width: 20rem;
+}
+
+.article-img{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.article h3{
+	margin: 0;
+	margin-left: 1rem;
+	font-size: 2em;
+}
+
+.article h4{
+	margin: 0;
+	margin-left: 1rem;
+	font-size: 1.3em;
+}
+
+.article p{
+	margin-left: 1rem;
+}
+
+#contact-map ul{
+	list-style-type: none;
+}
+
+#contact-map{
+	display: grid;
+	background-color: #A79DB1;
+	color: black;
+}
+
+#contact-map h4{
+	padding-left: 40px;
+	margin-bottom: 0;
+	font-size: 18px;
+}
+
+.map{
+	grid-row: 2;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0.2em solid  #442367;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.contact-info{
+	margin: auto;
+	text-align: left;
+	grid-row: 1;
+}
+
+.contact-info li{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.social{
+	display: none;
+}
+
+#gallery-grid{
+	max-width: 100%;
+	margin: auto;
+	justify-content: center;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 400px;
+	grid-template-rows: repeat(9, 275px);
+	gap: 0.5em;
+	margin-bottom: 1em;
+}
+
+.gallery-image{
+	margin: auto;
+	justify-content: center;
+	width: 90%;
+	height: 90%;
+	background-color: #408261;
+	border: 0.2em solid #1F6B44;
+	border-radius: 0.1rem;
+	opacity: 0.9;
+}
+
+.gallery-image picture{
+	display: block;
+	margin: 0.5rem;
+}
+
+
+.gallery-image picture img{
+	max-width: 100%;
+}
+
+#storm-center-form-container{
+	margin: auto;
+	justify-content: center;
+	background-color: #408261;
+	border: 0.2em solid #1F6B44;
+	border-radius: 0.1rem;
+	opacity: 0.9;
+	width: 70%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+}
+
+#storm-center-form-container h2{
+	background-color: #02542A;
+}
+
+#storm_form{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#storm_form input, #storm_form textarea, #storm_form select{
+	display: block;
+}
+
+#storm_form input[type=radio]{
+	display: inline;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+fieldset{
+	margin: 1rem;
+	background-color: #02542A;
+}
+
+textarea{
+	resize:vertical;
+	width: 98%;
+}
+
+.danger{
+	background-color: #442367;
+}
+
+input:required:invalid{
+	background: lightpink;
+}
+
+input:required:valid{
+	background: lightgreen;
+}
+
+.range-wrap {
+	position: relative;
+	width: 30%;
+	margin: 0;
+	margin-bottom: 1rem;
+  }
+  .range {
+	width: 100%;
+  }
+  .bubble {
+	background: #2B0851;
+	color: white;
+	padding: 4px 10px;
+	position: absolute;
+	border-radius: 4px;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  .bubble::after {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 2px;
+	background: #2B0851;
+	top: -1px;
+	left: 50%;
+  }
+
+  .town-cards{
+	  display: grid;
+  }
+
+  .town-cards section{
+	background-color: #408261;
+	border: 0.2em solid #1F6B44;
+	border-radius: 0.1rem;
+	opacity: 0.9;
+	padding: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	position: relative;
+  }
+
+.town-events{
+	position: absolute;
+	background-color: #5F437D;
+	opacity: 0.85;
+	line-height: 1.5;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	text-align: center;
+	display: none;
+}
+
+.town-cards section:hover .town-events{
+	display: block;
+}
+
+.town-name{
+	  background-color: transparent;
+	  border: none;
+	  margin: 0;
+  }
+
+.town-motto{
+	font-style: italic;
+	margin-top: -0.5rem;
+	margin-bottom: 1rem;
+	font-size: 0.8em;
+}
+
+.town-data{
+	line-height: 1.6;
+}
+
+.town-photo{
+	border: 2px inset #5F437D;
+	box-shadow: 0 0 10px #333;
+}
+
+.article-weather-fact h2{
+	background-color: transparent;
+	border: none;
+  }
+
+.article-weather-fact section{
+	background-color: #408261;
+	border: 0.2em solid #1F6B44;
+	border-radius: 0.1rem;
+	opacity: 0.9;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+  .home-hero img{
+	  max-width: 100%;
+	  margin-top: 1rem;
+	  margin-bottom: 1rem;
+  }

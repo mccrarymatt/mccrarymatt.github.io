@@ -1,0 +1,119 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Preston Idaho</title>
+  
+  <meta name="description" content="Preston Weather Page">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/tablet.css">
+  <link rel="stylesheet" href="css/desktop.css">
+
+</head>
+
+<body>
+  
+<header>
+    <div id="friday-banner">Saturday = Preston Pancakes in the Park!<br>  9:00 a.m. Saturday at the city park pavilion.</div>
+    <img src="images/Logo.svg" alt="Storm Spectators Logo" class=logo>
+    <h1>Storm Spectators</h1>
+    <div class="motto">Our eye is on the weather.</div>
+    <a class="menu-button" href="#" onclick="displayMenu()">
+        <img src="images/menu.svg" alt="menu">
+    </a>
+    <a class="close-menu-button" href="#" onclick="closeMenu()">
+        <img src="images/menucross.svg" alt="close">
+    </a>
+    <nav class="navigation">
+        <ul>
+            <li><a href="/lesson9/index.html">Home</a></li>
+            <li><a href="#" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+    
+    <h2>Preston Idaho</h2>
+    <div id="preston-weather-banner">
+        <picture>
+            <source srcset="./images/hero-large.jpg" media="(min-width: 60em)">
+            <source srcset="./images/hero-medium.jpg" media="(min-width: 37.5em)">
+            <img src="images/hero-small.jpg" alt="mountain weather">
+        </picture>
+        <section class=weather-summary>
+            <h3>Weather Summary</h3>
+            <ul>
+                <li>Currently: <span id="current"></span></li>
+                <li>High: <span id="highTemp"></span></li>
+                <li>Wind Chill: <span id="windChill"></span></li>
+                <li>Humidity: <span id="humidity"></span></li>
+                <li>Wind Speed: <span id="windSpeed"></span></li>
+            </ul>
+        </section>
+    </div>
+    <section class="forecast">
+        <h3>Five Day Forecast</h3>
+        <div class="forecast-day">Day</div> 
+        <div class="forecast-day">Day</div> 
+        <div class="forecast-day">Day</div>
+        <div class="forecast-day">Day</div>
+        <div class="forecast-day">Day</div>
+
+    </section>
+
+    <section class="article">
+        <img class="article-img" src="images/article-img.jpg" alt="group photo">
+        <h3>A Day to Remember</h3>
+        <h4>Author</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec tellus vel sapien vestibulum ornare a ut elit. Ut in justo ut est luctus rutrum sed eu tortor. Mauris semper tristique augue, a lobortis tellus fermentum eu. Proin ut dolor in enim pellentesque bibendum ac non nunc. Sed ut arcu lectus. Ut sollicitudin dolor vel orci semper, eu efficitur orci semper. Nunc lorem erat, vestibulum at diam sit amet, imperdiet rutrum mauris.</p>
+        <p>Vivamus euismod sed massa eu laoreet. Nullam dui lacus, tincidunt ac sodales at, laoreet dapibus ante. Maecenas felis libero, iaculis ut arcu nec, euismod pharetra elit. Pellentesque purus lacus, tincidunt sit amet feugiat eget, scelerisque nec ex. Cras commodo leo at orci ullamcorper, non blandit erat vulputate. Etiam finibus tellus id suscipit tincidunt. Sed vel aliquet quam. Suspendisse potenti. Quisque dictum nec mi in ornare. Cras id ultricies erat. Duis metus neque, viverra vitae lacinia at, aliquet mattis dui.</p>
+        <p>Aenean ullamcorper, sapien non ornare sodales, metus erat consectetur neque, et dapibus odio risus a urna. Mauris eget faucibus ex. Quisque efficitur lacus ut mi porta rhoncus. Aenean sed fringilla eros. Sed sollicitudin nec lectus eget mollis. Maecenas lobortis finibus odio eu fermentum. Morbi eu leo a justo hendrerit dignissim vitae at nunc. Aliquam eget massa vitae diam volutpat dapibus. Fusce consectetur felis et mauris volutpat condimentum. Curabitur at luctus enim, auctor varius velit. Nullam augue augue, varius ac elementum sit amet, dapibus sit amet nisl.</p>
+    </section>
+    <div id="contact-map">
+        <img src="images/map.jpg" alt="map" class="map">
+        <section class="contact-info">
+            <h4>Storm Spectators</h4>
+            <ul>
+                <li>&#9750; 47 Place LN, Preston, ID 83263</li>
+                <li>&#9742; 555.555.5555</li>
+                <li>&#9993; spectators@stormspectators.com</li>
+                <li class="social"><a href="#"><img src="images/facebook.svg" alt="facebook"></a></li>
+                <li class="social"><a href="#"><img src="images/twitter.svg" alt="twitter"></a></li>
+                <li class="social"><a href="#"><img src="images/linkedin.svg" alt="linkedin"></a></li>
+            </ul>
+        </section>
+    </div>
+</main>
+
+<footer>
+ &#169; Storm Spectators | Attributions : Weather Data from <a href="https://openweathermap.org/">OpenWeatherMap</a> Banner from <a href="https://unsplash.com/photos/x7mpSrRHoe4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Paul Arterburn</a> Article Photo from <a href="https://unsplash.com/photos/KSdfplrJreg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Daan Stevens</a> <div>Icons made by <a href="https://www.freepik.com">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> map from <a href="https://24timezones.com/">24timezones.com</a> | Matthew McCrary <br> <div id="date"></div>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+  google: {
+    families: [
+       'Merriweather', 'Merriweather+Sans'
+    ]
+  }
+});
+</script>
+<script src="js/preston.js"></script>
+<script src="js/weather.js"></script>
+
+</body>
+</html>

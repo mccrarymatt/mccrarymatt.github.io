@@ -1,0 +1,124 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	nav a {
+		font-size: 1.1rem;
+	}
+
+	nav ul li a {
+		display: block;
+	}
+
+	nav{
+		display: block;
+		margin-top: 1em;
+	}
+
+	nav ul{
+		display: grid;
+		grid-template-columns: auto auto auto auto auto auto;
+		grid-template-rows: auto;
+	}
+
+	header, footer {
+		max-width: 70%;
+	}
+
+	main{
+		max-width: 70%;
+	}
+
+	header h1 {
+		font-size: 1.7em;
+	}
+
+	.logo {
+		max-width: 100px;
+		margin: auto;
+	}
+
+	.menu-button, .close-menu-button {
+		display: none;
+	}
+
+	.weather-summary h3{
+		font-size: 1.5em;
+	}
+	
+	.weather-summary ul{
+		font-size: 1.4em;
+	}
+
+	.article{
+		min-height: 26rem;
+	}
+
+	.article-img{
+		float: right;
+		margin-right: 1rem;
+		margin-top: 1rem;
+	}
+
+	#gallery-grid{
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: repeat(3, 270px);
+	}
+
+	.gallery-image:hover{
+		box-shadow: 0 0 20px #333;
+	}
+
+	.map{
+		grid-row: 1;
+	}
+	
+	.contact-info{
+		grid-row: 1;
+		grid-column: 2;
+	}
+
+	.social{
+		display: inline;
+		padding-right: 0.2em;
+	}
+
+	.social img{
+		max-width: 1em;
+	}
+
+	.map img{
+		width: 50%;
+	}
+
+	.town-cards{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.town-photo{
+		grid-row: 1;
+		grid-column: 1;
+	}
+
+	.town-data{
+		grid-column: 1;
+	}
+
+	.town-motto{
+		grid-column: 1;
+	}
+
+	.fact{
+		max-width: 40%;
+	}
+
+	.fact h3{
+		margin-bottom: 0;
+	}
+
+	.article img{
+		width: 25rem;
+	}
+
+	.article-weather-fact .article img{
+		width: 30rem;
+	}
+}
