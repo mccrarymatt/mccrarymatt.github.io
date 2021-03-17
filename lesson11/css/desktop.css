@@ -48,6 +48,14 @@
 		font-size: 1.4em;
 	}
 
+	.town-page-events h3{
+		font-size: 1.2em;
+	}
+	
+	.town-page-events ul{
+		font-size: 1em;
+	}
+
 	.article{
 		min-height: 26rem;
 	}
@@ -56,6 +64,7 @@
 		float: right;
 		margin-right: 1rem;
 		margin-top: 1rem;
+		box-shadow: 0 0 20px #333;
 	}
 
 	#gallery-grid{

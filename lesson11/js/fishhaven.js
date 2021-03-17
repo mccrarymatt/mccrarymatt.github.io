@@ -78,3 +78,31 @@ for (var i = 0; i < forecastDays.length; i++) {
     forecastDays[i].innerHTML = days[(dayOfWeek + i + 1) % 7];
 
 }
+
+const eventsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(eventsURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    
+    const towns = jsonObject['towns'];
+
+    for (let i = 0; i < towns.length; i++ ) {
+
+        let list = document.createElement('ul');
+
+        if (towns[i].name == 'Fish Haven') {
+
+            for (let iEvent = 0; iEvent < towns[i].events.length; iEvent++){
+                list.innerHTML += "<ul>" +towns[i].events[iEvent] + "</ul>"
+            }     
+
+            document.querySelector('section.town-page-events').appendChild(list);
+
+        }
+
+    }
+    
+});

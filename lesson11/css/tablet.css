@@ -45,6 +45,14 @@
             font-size: 1em;
         }
 
+        .town-page-events h3{
+            font-size: 1em;
+        }
+        
+        .town-page-events ul{
+            font-size: 0.9em;
+        }
+
         .map{
             grid-row: 1;
         }
