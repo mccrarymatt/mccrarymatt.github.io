@@ -1,0 +1,195 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Storm Center</title>
+  
+  <meta name="description" content="Storm Report Page">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/tablet.css">
+  <link rel="stylesheet" href="css/desktop.css">
+
+</head>
+
+<body>
+  
+<header>
+    <img src="images/Logo.svg" alt="Storm Spectators Logo" class=logo>
+    <h1>Storm Spectators</h1>
+    <div class="motto">Our eye is on the weather.</div>
+    <a class="menu-button" href="#" onclick="displayMenu()">
+        <img src="images/menu.svg" alt="menu">
+    </a>
+    <a class="close-menu-button" href="#" onclick="closeMenu()">
+        <img src="images/menucross.svg" alt="close">
+    </a>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-6.html">Preston</a></li>
+            <li><a href="sodasprings-11.html">Soda Springs</a></li>
+            <li><a href="fishhaven-11.html">Fish Haven</a></li>
+            <li><a href="#" class="active">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+<div id="storm-center-form-container">
+<h2>Storm Center Report</h2>
+<form method="GET" action="thanks.html" id="storm_form">
+    <fieldset>
+        <legend>Required Contact Details</legend>
+        <br>
+        <label class="block-label">Full Name:
+            <input type="text" name="full_name" pattern="[A-Za-z ]{5,}" placeholder="Full Name" required>
+        </label>
+        <br>
+        <label class="block-label">Phone Number:
+            <input type="tel" name="phone_number" placeholder="###-###-####" required>
+        </label>
+        <br>
+        <label class="block-label">Zip Code:
+            <input type="number" name="zip_code" placeholder="#####" required>
+        </label>
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Storm Details</legend>
+        <br>
+        <label class="block-label">Storm Date:
+            <input type="date" name="storm_date">
+        </label>
+        <br>
+        <label class="block-label">Storm Type:
+            <input type="text" name="storm_type" list="storm_list">
+            <datalist id="storm_list">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thunderstorm"></option>
+                <option value="Tornado"></option>
+            </datalist>
+        </label>
+        <br>
+        <label for="storm_severity">Storm Severity:</label>
+            <div class="range-wrap">
+                <input type="range" id="storm_severity" name="storm_severity" class="range" min="1" max="10">
+                <output class="bubble"></output>
+            </div>
+        <br>
+        <label class="block-label">Storm Region:
+            <select name="storm_region" form="storm_form">
+                <option value="preston">Preston</option>
+                <option value="sodaSprings">Soda Springs</option>
+                <option value="fishHaven">Fish Haven</option>
+            </select>
+        </label>
+        <br>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Additional Details</legend>
+        <br>
+        <label class="block-label">Email:
+            <input type="email" name="email" placeholder="someone@myemail.com">
+        </label>
+        <br>
+        <fieldset class="danger">
+            <legend>Are You in Danger</legend>
+            <label>
+                <input type="radio" name="user_danger_level" value="yes">
+                Yes
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="user_danger_level" value="maybe">
+                Maybe
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="user_danger_level" value="no">
+                No
+            </label>
+            <br>
+        </fieldset>
+        <br>
+        <label class="block-label">Comments:
+            <textarea name="comments" rows="8"></textarea>
+        </label>
+        <br>
+    </fieldset>
+    <br>
+    <input type="submit">
+</form>
+
+
+</div>
+    <div id="contact-map">
+        <img src="images/map.jpg" alt="map" class="map">
+        <section class="contact-info">
+            <h4>Storm Spectators</h4>
+            <ul>
+                <li>&#9750; 47 Place LN, Preston, ID 83263</li>
+                <li>&#9742; 555.555.5555</li>
+                <li>&#9993; spectators@stormspectators.com</li>
+                <li class="social"><a href="#"><img src="/lesson6/images/facebook.svg" alt="facebook"></a></li>
+                <li class="social"><a href="#"><img src="/lesson6/images/twitter.svg" alt="twitter"></a></li>
+                <li class="social"><a href="#"><img src="/lesson6/images/linkedin.svg" alt="linkedin"></a></li>
+            </ul>
+        </section>
+    </div>
+
+
+</main>
+
+
+<footer>
+ &#169; Storm Spectators | Attributions: Icons made by <a href="https://www.freepik.com">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>, map from <a href="https://24timezones.com/">24timezones.com</a> | Matthew McCrary <br> <div id="date"></div>
+
+</footer>
+
+<script src="js/menu-date.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+  google: {
+    families: [
+       'Merriweather', 'Merriweather+Sans'
+    ]
+  }
+});
+
+const allRanges = document.querySelectorAll(".range-wrap");
+allRanges.forEach(wrap => {
+  const range = wrap.querySelector(".range");
+  const bubble = wrap.querySelector(".bubble");
+
+  range.addEventListener("input", () => {
+    setBubble(range, bubble);
+  });
+  setBubble(range, bubble);
+});
+
+function setBubble(range, bubble) {
+  const val = range.value;
+  const min = range.min ? range.min : 0;
+  const max = range.max ? range.max : 100;
+  const newVal = Number(((val - min) * 100) / (max - min));
+  bubble.innerHTML = val;
+
+  bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+}
+</script>
+
+</body>
+</html>
