@@ -162,8 +162,8 @@ main h2, main h3{
 
 .weather-summary{
 	position: absolute;
-	top: 15px;
-	left: 15px;
+	top: 5px;
+	left: 5px;
 	background-color: #408261;
 	border: 0.2em solid #1F6B44;
 	border-radius: 0.1rem;
@@ -173,7 +173,7 @@ main h2, main h3{
 
 .weather-summary h3{
 	margin: 0;
-	font-size: 1em;
+	font-size: 0.8em;
 }
 
 .weather-summary ul{
@@ -181,13 +181,13 @@ main h2, main h3{
 	margin-bottom: 0;
 	list-style-type: none;
 	padding: 0%;
-	font-size: 0.9em;
+	font-size: 0.6em;
 }
 
 .town-page-events{
 	position: absolute;
-	top: 15px;
-	right: 15px;
+	top: 5px;
+	right: 5px;
 	background-color: #5F437D;
 	border: 0.2em solid #A79DB1;
 	border-radius: 0.1rem;
@@ -197,7 +197,7 @@ main h2, main h3{
 
 .town-page-events h3{
 	margin: 0;
-	font-size: 1em;
+	font-size: 0.8em;
 }
 
 .town-page-events ul{
@@ -205,7 +205,7 @@ main h2, main h3{
 	margin-bottom: 0;
 	list-style-type: none;
 	padding: 0%;
-	font-size: 0.9em;
+	font-size: 0.6em;
 }
 
 .weather-summary span{
@@ -348,6 +348,11 @@ main h2, main h3{
 	display: flex;
 	flex-direction: column;
 	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#storm_form fieldset{
 	margin-left: auto;
 	margin-right: auto;
 }

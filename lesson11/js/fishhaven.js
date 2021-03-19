@@ -96,7 +96,7 @@ fetch(eventsURL)
         if (towns[i].name == 'Fish Haven') {
 
             for (let iEvent = 0; iEvent < towns[i].events.length; iEvent++){
-                list.innerHTML += "<ul>" +towns[i].events[iEvent] + "</ul>"
+                list.innerHTML += "<li>" +towns[i].events[iEvent] + "</li>"
             }     
 
             document.querySelector('section.town-page-events').appendChild(list);
