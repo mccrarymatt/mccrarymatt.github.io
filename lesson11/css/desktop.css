@@ -98,6 +98,10 @@
 		width: 50%;
 	}
 
+	#storm_form fieldset{
+		width: 70%;
+	}
+
 	.town-cards{
 		grid-template-columns: 1fr 1fr 1fr;
 	}
