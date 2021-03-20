@@ -63,8 +63,14 @@
 	.article-img{
 		float: right;
 		margin-right: 1rem;
+		margin-left: 1rem;
 		margin-top: 1rem;
 		box-shadow: 0 0 20px #333;
+	}
+
+	.article ul{
+		display: grid;
+		grid-template-columns: auto auto auto;
 	}
 
 	#gallery-grid{
