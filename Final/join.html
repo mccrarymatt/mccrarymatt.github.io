@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Mount Airy Chamber of Commerce - Membership </title>
+  
+  <meta name="description" content="">
+
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  
+    <header>
+        <img id="logo" src="images/logo.svg" alt="Chamber Logo">
+        <h1>Mount Airy Chamber of Commerce</h1>
+        <a id="menu" href="#" onclick="menu()">
+            <img id="menu-img" src="images/menu-empty.svg" alt="menu">
+        </a>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="city.html">Mount Airy</a></li>
+                <li><a href="#" class="active">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="directory.html">Directory</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+<div class="form-container">
+    <h2>Join Us</h2>
+    <form method="GET" action="thanks.html" id="storm_form">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label class="block-label">First Name:</label>
+                <input type="text" name="first_name" pattern="[A-Za-z ]{5,}" placeholder="First Name" required>
+
+            <label class="block-label">Last Name:</label>
+                <input type="text" name="last_name" pattern="[A-Za-z ]{5,}" placeholder="Last Name" required>
+            <label class="block-label">Title:</label>
+                <input type="text" name="title" pattern="[A-Za-z ]{5,}" placeholder="Title">
+            <label class="block-label">Email:</label>
+                <input type="email" name="email" placeholder="someone@myemail.com" required>    
+            <label class="block-label">Cell Phone:</label>
+                <input type="tel" name="cell_phone" placeholder="###-###-####" required>
+        </fieldset>
+        <fieldset>
+            <legend>Business Information</legend>
+            <br>
+            <label class="block-label">Business Name:</label>
+                <input type="text" name="business_name" placeholder="Business Name" required>
+            <label class="block-label">Business Address:</label>
+                <input type="text" name="business_address">
+            <label class="block-label">Business Website:</label>
+                <input type="text" name="business_website">
+            <label class="block-label">Business Description:</label>
+                <input type="text" name="business_description">
+        </fieldset>
+        
+        <fieldset id="member">
+            <legend>Membership Level</legend>
+            <div class="membership">
+                <h3>Non-Profit Includes:</h3>
+                <ul>
+                    <li>Directory Listing</li>
+                    <li>Business Training</li>
+                    <li>Member Event Priority</li>
+                </ul>
+                <label>
+                    Non-profit ($100)
+                    <input type="radio" name="membership-level" value="non-profit">
+                </label>
+            </div>
+            <div class="membership">
+                <h3>Bronze Includes:</h3>
+                <ul>
+                    <li>Directory Listing</li>
+                    <li>Business Training</li>
+                    <li>Member Event Priority</li>
+                    <li>Social Media Posts</li>
+                    <li>Featured Business Chance</li>
+                </ul>
+                <label>
+                    Bronze ($200)
+                    <input type="radio" name="membership-level" value="bronze">
+                </label>
+            </div>
+            <div class="membership">
+                <h3>Silver Includes:</h3>
+                <ul>
+                    <li>Directory Listing</li>
+                    <li>Business Training</li>
+                    <li>Member Event Priority</li>
+                    <li>Social Media Posts</li>
+                    <li>Featured Business Chance</li>
+                    <li>Advertising Sponsership</li>
+                </ul>
+                <label>
+                    Silver ($400)
+                    <input type="radio" name="membership-level" value="silver">
+                </label>
+            </div>
+            <div class="membership">
+                <h3>Gold Includes:</h3>
+                <ul>
+                    <li>Directory Listing</li>
+                    <li>Business Training</li>
+                    <li>Member Event Priority</li>
+                    <li>Social Media Posts</li>
+                    <li>Featured Business Chance</li>
+                    <li>Advertising Priority</li>
+                    <li>Luncheon and Meeting Invitations</li>
+                </ul>
+                <label>
+                    Gold ($1000)
+                    <input type="radio" name="membership-level" value="gold">
+                </label>
+            </div>
+            <br>
+        </fieldset>
+        <br>
+        <input type="submit">
+    </form>
+</div>
+</main>
+
+<footer>
+    <div>&#169; Mt. Airy Chamber of Commerce</div><div id="date"></div><div>Matthew McCrary</div><div>Attributions:</div>
+</footer>
+
+<script src="js/standard.js"></script>
+
+</body>
+</html>

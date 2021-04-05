@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Mullins Pawn Shop & Jewelers",
+		"logo": "images/mullins.jpg",
+		"link": "http://mullinspawn.com/",
+        "email": "mullinspawnshop@gmail.com",
+        "phone": "336-786-6417",
+        "address": "1911 Caudle Drive, Mount Airy, NC 27030"
+    },
+    {
+        "name": "Friendly Heating and Cooling",
+		"logo": "images/friendlyheat.jpg",
+		"link": "https://www.friendlyheatingcooling.com/",
+        "email": "service@friendlyheatingcooling.com",
+        "phone": "336-789-6453",
+        "address": "810 W Lebanon St, Mount Airy, NC 27030"
+    },
+    {
+        "name": "Snappy Lunch",
+		"logo": "images/snappy.jpg",
+		"link": "http://www.thesnappylunch.com/",
+        "email": "snappystaff@thesnappylunch.com",
+        "phone": "336-786-4931",
+        "address": "125 North Main Street, Mount Airy, NC 27030"
+    },
+    {
+        "name": "Mt. Airy Equipment Co",
+		"logo": "images/equipment.jpg",
+		"link": "https://www.mtairyequipmentco.com/",
+        "email": "N/A",
+        "phone": "336-786-6240",
+        "address": "1431 West Pine St, Mount Airy, NC 27030"
+    },
+    {
+        "name": "C&B Lumber Inc.",
+		"logo": "images/CBLumber.jpg",
+		"link": "https://candblumber.com/",
+        "email": "info@candblumber.com",
+        "phone": "276-744-3337",
+        "address": "3594 Turkey Knob Rd, Fries, VA 24330"
+    },
+    {
+        "name": "Sheds By Design",
+		"logo": "images/shedsmod.jpg",
+		"link": "https://shedsbydesign.com/",
+        "email": "silas@shedsbydesign.com",
+        "phone": "336-755-3171",
+        "address": "809 Fowler Rd, Mount Airy, NC 27030"
+    },
+    {
+        "name": "Quality Control Inc.",
+		"logo": "images/qualitycontrol.jpg",
+		"link": "https://qualitycontrolinc.com/",
+        "email": "N/A",
+        "phone": "336-789-1342",
+        "address": "103 W Pine Street, Mount Airy, NC 27030"
+    }
+]
+	

@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+body {
+	font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+h2, h3 {
+    color: #FFC70C;
+}
+
+header{
+    display: grid;
+    background-color: #085FBA;
+    color: white;
+    border-bottom: 2px inset #064587;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+header h1{
+    grid-row: 1;
+    grid-column: 2;
+    max-width: 80%;
+    margin-left: auto;
+}
+
+header img{
+    grid-row: 1;
+    grid-column: 2;
+    max-width: 10rem;
+}
+
+header a{
+    -webkit-tap-highlight-color: transparent;
+}
+
+#menu{
+    grid-row: 2;
+    grid-column: 1/4;
+    margin: auto;
+}
+
+#menu-img {
+    height: 100px;
+    width: 75px;
+}
+
+footer{
+    margin-top: 1rem;
+    background-color: #085FBA;
+    color: white;
+    border-top: 2px inset #064587;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    text-align: center;
+}
+
+nav {
+	display: none;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	text-align: center;
+	background-color: #3E89D7;
+	color: white;
+	grid-row: 5;
+	grid-column: 1/4;
+	width: 100%;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+    align-items: center;
+}
+
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75em;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+
+nav a:hover {
+	background-color: #064587;
+}
+
+.active {
+	background-color:  #66A2DF;
+}
+
+#alert{
+    display: none;
+    background-color: #FF9D0C;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+#alert a{
+    -webkit-tap-highlight-color: transparent;
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+
+#home-grid{
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.news {
+    background-color: #085FBA;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.weather-info-large{
+    display: none;
+}
+
+.weather-info-small, .weather-info-large{
+    background-color: #085FBA;
+    border-radius: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.weather-info-small img{
+    display: none;
+}
+
+.weather-info-small ul{
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.weather-info-small ul li{
+    padding: 0.1rem;
+}
+
+#currentTemp{
+    font-size: 60px;
+    color: #FF9900;
+    padding: 1rem;
+}
+
+.news h2 {
+    padding-top: 1rem;
+}
+
+.news ul {
+    list-style-type: none;
+    padding: 0.5rem;
+    background-color: #3E89D7;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
+.news ul li{
+    margin: auto;
+    padding: 0.5rem;
+    white-space: nowrap;
+    color: white;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.news a {
+    color: white;
+}
+
+.events {
+    background-color: #085FBA;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.events h2 {
+    padding-top: 1rem;
+}
+
+.events ul {
+    list-style-type: none;
+    padding: 0.5rem;
+    background-color: #3E89D7;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
+.events ul li{
+    margin: auto;
+    padding: 0.5rem;
+    color: white;
+    font-size: 15px;
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-delay: 1s;
+}
+
+.events ul li span{
+    display: none;
+}
+
+.events ul li:hover span{
+    display: inline-block;
+}
+
+.purpose {
+    background-color: #085FBA;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.purpose h2 {
+    padding-top: 1rem;
+}
+
+.join-now {
+    background-color: #085FBA;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.join-now h2 {
+    padding-top: 1rem;
+}
+
+.forecast {
+    background-color: #085FBA;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.forecast-day{
+    display: grid;
+    background-color: #3E89D7;
+    padding: 0.5rem;
+}
+
+.forecast-day span{
+    grid-row: 1;
+}
+
+.forecast-day img{
+    grid-row: 2;
+    margin: auto;
+}
+
+.featured-businesses {
+    background-color: #085FBA;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.featured-businesses h2 {
+    padding-top: 1rem;
+}
+
+.contact-info {
+    background-color: #085FBA;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.contact-info h3 {
+    padding-top: 1rem;
+}
+
+.contact-info ul li img{
+    max-width: 40px;
+}
+
+.contact-info ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+    text-align: left;
+    font-size: 15px;
+    margin-left: 1rem;
+}
+
+.contact-info ul li {
+    padding-top: 1rem;
+}
+
+.form-container {
+    background-color: #085FBA;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+    margin: auto;
+}
+
+.form-container h2{
+    padding-top: 1rem;
+}
+
+.form-container fieldset{
+    max-width: 80%;
+    margin: auto;
+    text-align: left;
+    display: grid;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    gap: 0.5rem;
+    grid-template-columns: 2fr 4fr;
+}
+
+.form-container label{
+    grid-column: 1;
+}
+
+.form-container input{
+    grid-column: 2;
+    max-width: 20rem;
+}
+
+#member{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#member div{
+    margin: auto;
+}
+
+#member ul{
+    list-style: none;
+    padding: 0;
+}
+
+.membership{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+
+.membership ul{
+    height: 10rem;
+}
+
+.membership label{
+    color: #FF9900;
+}
+
+input:required:invalid{
+	background: lightpink;
+}
+
+input:required:valid{
+	background: lightgreen;
+}
+
+.contact-page-info, .contact-map, .contact-form, .directors{
+    background-color: #085FBA;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+h2{
+    padding-top: 1rem;
+}
+
+#title{
+    background-color: #085FBA;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+}

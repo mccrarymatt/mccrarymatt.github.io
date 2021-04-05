@@ -1,0 +1,99 @@
+@media only screen and (min-width: 60em) {
+
+    body{
+        max-width: 80%;
+        margin: auto;
+    }
+
+    #home-grid{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    header h1{
+        margin: auto;
+        grid-column: 1/4;
+    }
+
+    #logo{
+        grid-column: 1;
+        max-width: 25rem;
+        width: 15rem;
+    }
+
+    .weather-info-large{
+        grid-row: 1;
+        grid-column: 3;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .news{
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .events{
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    .forecast{
+        grid-column: 2;
+        font-size: 40px;
+        color: #FF9900;
+    }
+
+    .forecast span{
+        font-size: 30px;
+        color: white;
+    }
+
+    .forecast img{
+        display: none;
+    }
+
+    .purpose{
+        grid-row: 3;
+        grid-column: 1/4;
+        width: 48%;
+        padding: 1rem;
+    }
+
+    .join-now{
+        grid-row: 3;
+        grid-column: 1/4;
+        margin-left: auto;
+        width: 48%;
+    }
+
+    .featured-businesses{
+        grid-column: 1/4;
+    }
+
+    .contact-info{
+        grid-column: 1/4;
+    }
+
+    #member{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: auto auto auto auto;
+        grid-row: auto auto;
+        background-color: transparent;
+    }
+
+    #member br{
+        display: none;
+    }
+
+    #member legend{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #member div{
+        grid-row: 2;
+        margin-bottom: auto;
+    }
+
+}
