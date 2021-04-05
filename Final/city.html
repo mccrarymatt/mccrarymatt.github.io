@@ -38,14 +38,109 @@
         </header>
 
 <main>
-<section class="demographics"></section>
-<section class="events"></section>
-<section class="event-form"></section>
-<section class="new-business"></section>
+<section class="demographics">
+    <h2>Demographics</h2>
+    <div class="demo-card">
+        <h3>Population</h3>
+        <ul>
+            <li>2019 - 10,208</li>
+            <li>2018 - 10,227</li>
+            <li>2010 - 10,388</li>
+        </ul>
+    </div>
+    <div class="demo-card">
+        <h3>Median Age</h3>
+        <ul>
+            <li>2019 - 47.9</li>
+            <li>2018 - 46.1</li>
+            <li>2017 - 46</li>
+        </ul>
+    </div>
+    <div class="demo-card">
+        <h3>Median Household Income</h3>
+        <ul>
+            <li>2018 - $33,988</li>
+            <li>2017 - $37,194</li>
+            <li>2016 - $35,831</li>
+        </ul>
+    </div>
+</section>
+
+<picture class="hero">
+    <source srcset="./images/city-hero-large.jpg" media="(min-width: 85em)">
+    <source srcset="./images/city-hero-medium.jpg, " media="(min-width: 37.5em)">
+    <img loading="lazy" src="images/city-hero.jpg" alt="fountain flower garden">
+</picture>
+
+<section class="city-events">
+    <h2>Events</h2>
+    <div class="event-card">
+        <h3>Consignment Auction</h3>
+        <p><span>Sat, Apr 10, 2 PM<br>747 Holly Springs Rd, Mt Airy, NC</span><br>Consignment Auction April 10th at 10am! Gun sales starting around 1pm, over 50 guns! Preview day April 9th from 9am-5pm. There’s still time to consign items</p>
+    </div>
+    <div class="event-card">
+        <h3>Living Rhythms Hands-On African Drumming workshop</h3>
+        <p><span>Sat, Apr 10, 12 – 1 PM<br>Andy Griffith Museum 218 Rockford St, Mt Airy, NC</span><br>Living Rhythms Hands-On African Drumming workshops will be held on the second Saturday of each month from February through May.</p>
+    </div>
+    <div class="event-card">
+        <h3>Summer Concert Series - The Embers Featuring Craig Woolard</h3>
+        <p><span>Thu, Apr 29, 7:30 PM<br>Blackmon Amphitheatre 231 Spring St, Mt Airy, NC</span><br>The Surry Arts Council is looking forward to reopening the Blackmon Amphitheatre for the 2021 Summer Concert Series. </p>
+    </div>
+    <div class="event-card">
+        <h3>Dennis Tolbert at Old North State Winery!</h3>
+        <p><span>Sat, Apr 10, 1 – 3 PM<br>Old North State Winery 308 N Main St, Mt Airy, NC</span><br>Live & Unplugged ~ Acoustic Fun at the Old North State Winery! Come and spend the day with us ~ Saturday Afternoon from 1pm to 3pm.</p>
+    </div>
+    <div class="event-card">
+        <h3>April Ghost Social</h3>
+        <p><span>Sat, Apr 24, 7 PM<br>Mount Airy Museum of Regional History 301 N Main St, Mt Airy, NC</span><br>Love spooky stories and sweet treats? Join us for a Ghost Social, a way to learn more about the history and things that go bump in the night in this region.</p>
+    </div>
+    <div class="event-card">
+        <h3>Wild Flower Hike with Ken Bridle at Minglewood</h3>
+        <p><span>Sun, Apr 11, 1:00 – 3:30 PM<br>Minglewood Farm and Nature Preserve 238 Minglewood Rd, Westfield, NC</span><br>Join Minglewood with our friend Ken Bridle for a wildflower hike at Minglewood Preserve. Learn about the wildflowers of the NC foothills.</p>
+    </div>
+</section>
+<img id="city-right" src="images/city-right.jpg">
+<img id="city-left" src="images/city-left.jpg">
+<section class="event-form">
+    <h2>Plan an Event</h2>
+    <p>Do you have an event you'd like to announce?<br>Give us your contact info and event details and lets see what we can do.</p>
+    <form id="event-form" method="GET" action="thanks.html">
+        <label>First Name:</label>
+            <input type="text" name="first_name" pattern="[A-Za-z ]{5,}" placeholder="First Name" required>
+        <label>Last Name:</label>
+            <input type="text" name="last_name" pattern="[A-Za-z ]{5,}" placeholder="Last Name" required>
+        <label>Email:</label>
+            <input type="email" name="email" placeholder="someone@myemail.com" required>    
+        <label>Cell Phone:</label>
+            <input type="tel" name="cell_phone" placeholder="###-###-####">
+        <label>Event Name:</label>
+            <input type="text" name="event_name" required>
+        <label>Event Date:</label>
+            <input type="date" name="event_date">
+        <label>Comments:</label>
+            <textarea name="comments" rows="8">Place Event Details Here</textarea>
+            <br>
+            <input class="submit" type="submit">
+    </form>
+</section>
+<img id="city-right2" src="images/city-right2.jpg">
+<img id="city-left2" src="images/city-left2.jpg">
+<section class="new-business">
+    <h2>Starting a Business</h2>
+    <p>Are you interested in starting a buisness well here are a few things you should do.</p>
+    <ul>
+        <li>Do Market Research - Find out what's wanted in the area</li>
+        <li>Get a Business Plan - Use the information you gather to plan where you're going.</li>
+        <li>Figure Out Your Funding - Whether out of pocket or a loan you need to know you'll have enough to start.</li>
+        <li>Look At the Laws - Figure out what type of business works for you and any permits and licenses.</li>
+        <li>Plan Plan Plan - Besides what you've planned so far you'll need other plans for different situations and events.</li>
+    </ul>
+    <p>This is just a small list and there's certainly more to it for further details check out <a href="https://www.sba.gov/business-guide/10-steps-start-your-business">sba.gov</a></p>
+</section>
 </main>
 
 <footer>
-    <div>&#169; Mt. Airy Chamber of Commerce</div><div id="date"></div><div>Matthew McCrary</div><div>Attributions:</div>
+    <div>&#169; Mt. Airy Chamber of Commerce</div><div id="date"></div><div>Matthew McCrary</div><div>Attributions:<br>Demographic Information Taken From <a href="https://datausa.io/profile/geo/mount-airy-nc#:~:text=The%205%20largest%20ethnic%20groups,and%2097.8%25%20are%20U.S.%20citizens.">datausa.io</a> and <a href="https://www.census.gov/quickfacts/mountairycitynorthcarolina">census.gov</a> Events from Google Events</div>
 </footer>
 
 <script src="js/standard.js"></script>

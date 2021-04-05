@@ -20,7 +20,7 @@ fetch(apiCurrentURL)
         let weatherLarge = document.getElementsByClassName("weather-info-large")
 
         currentTemp.innerHTML = (jsObject.current.temp).toFixed(1) + "&#176;F";
-        humidity.innerHTML = "Humidity : " + jsObject.current.humidity;
+        humidity.innerHTML = "Humidity : " + jsObject.current.humidity + "%";
         description.innerHTML = jsObject.current.weather[0].main;
 
         currentTemp.setAttribute('id', 'currentTemp');

@@ -72,18 +72,30 @@
         <li>Virtual Storybook Museum<br><span>05/07/21 <br> Mount Airy Museum of Regional History</span></li>
     </ul>
 </section>
-<picture class="hero"></picture>
+
+<picture class="hero">
+    <source srcset="./images/home-hero-large.jpg" media="(min-width: 85em)">
+    <source srcset="./images/home-hero-medium.jpg, " media="(min-width: 37.5em)">
+    <img loading="lazy" src="images/home-hero.jpg" alt="fountain flower garden">
+</picture>
+
 <section class="purpose">
     <h2>Our Purpose</h2>
+    <img src="images/welcome.jpg" alt="welcome">
     <p>We pride ourselves in always working toward a better and brighter city of Mount Airy.<br> It is our primary goal to support and strengthen both the community and local businesses.<br>We strive daily to provide a connection between the everyday members of the community and the local businesses that help our community grow.</p>
 </section>
 <section class="join-now">
     <h2>Join Us!</h2>
-    <p></p>
+    <img src="images/join.jpg" alt="teamwork">
+    <div>
+        <p>If you want to contribute to the development of Mount Airy and support its growth don't hesitate to join us!</p>
+        <a href="join.html" id="join-link">Join</a>
+    </div>
 </section>
-<div class="featured-businesses">
+<div id="featured-businesses">
     <h2>Featured Businesses</h2>
 </div>
+<img loading="lazy" class="home-large-img" src="images/left-river.jpg" alt="river">
 <div class="contact-info">
         <h3>Contact Us</h3>
         <ul>
@@ -94,14 +106,16 @@
         </ul>
 
 </div>
+<img loading="lazy" class="home-large-img" src="images/right-river.jpg" alt="river">
 </main>
 
 <footer>
-<div>&#169; Mt. Airy Chamber of Commerce</div><div id="date"></div><div>Matthew McCrary</div><div>Attributions:</div>
+<div>&#169; Mt. Airy Chamber of Commerce</div><div id="date"></div><div>Matthew McCrary</div><div>Attributions:<br>Social Media Icons made by <a href="https://www.freepik.com">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br>Business Logos from their respective websites<br>Weather Info from <a href="https://openweathermap.org/">https://openweathermap.org/</a><br>Join Photo by <a href="https://unsplash.com/@hannahbusing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hannah Busing</a> on <a href="https://unsplash.com/s/photos/teamwork?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
 </footer>
 
   <script src="js/standard.js"></script>
   <script src="js/weather.js"></script>
+  <script src="js/featured.js"></script>
 
 </body>
 </html>

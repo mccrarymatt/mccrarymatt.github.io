@@ -1,5 +1,8 @@
 @media only screen and (min-width: 37.5em) {
 
+    h1{
+        font-size: 2em;
+    }
 
     #menu{
         display: none;
@@ -67,6 +70,16 @@
         grid-column: 1/3;
     }
 
+
+    .hero{
+        grid-row: 2;
+        grid-column: 1/3;
+    }
+
+    .hero img{
+        max-width: 700px;
+    }
+
     .news{
         grid-row: 3;
     }
@@ -86,7 +99,7 @@
         grid-column: 1/3;
     }
 
-    .featured-businesses{
+    #featured-businesses{
         grid-row: 6;
         grid-column: 1/3;
     }
@@ -114,7 +127,81 @@
     }
 
     .form-container{
+        max-width: 90%;
+    }
+
+    #business-cards div ul, #featured-businesses div ul{
+        grid-column: 2;
+    }
+
+    #featured-businesses div{
+        max-width: 90%;
+        min-height: 250px;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #business-cards div{
+        min-height: 250px;
+        min-width: 605px;
+        box-shadow: 0 0 10px #3E89D7;
+    }
+
+    .city-events{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+    }
+
+    .city-events h2{
+        grid-column: 1/3;
+    }
+
+    .event-card{
+        margin: auto;
+        max-width: 90%;
+    }
+
+    .event-form, .new-business, .contact-form{
         max-width: 80%;
+        margin: auto;
+    }
+
+    .contact-form{
+        margin-top: 1rem;
+    }
+
+    .contact-form input{
+        width: 50%;
+    }
+
+    #map-small{
+        display: none;
+    }
+
+    #map-medium{
+        display: block;
+        margin: auto;
+    }
+
+    .directors{
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .directors ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+    }
+
+    .directors ul li{
+        margin: auto;
+    }
+
+    .purpose img, .join-now img{
+        box-shadow: 0 0 10px #333;
     }
 
 }
